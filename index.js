@@ -120,7 +120,7 @@ const createHeat = async () => {
     .attr('height', y.bandwidth())
     .attr('data-year', (d) => d.year)
     .attr('data-month', (d) => d.month - 1)
-    .attr('data-monthName', (d) => d.monthName)
+    .attr('data-month-name', (d) => d.monthName)
     .attr('data-temp', (d) => d.newTemperature)
     .style('fill', (d) => colorScale(d.newTemperature))
     .on(
